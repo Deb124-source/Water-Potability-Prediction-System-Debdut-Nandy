@@ -17,6 +17,9 @@ st.set_page_config(
 # -----------------------------
 model = joblib.load("water_quality_model (1).pkl")
 imputer = joblib.load("imputer (1).pkl")
+st.write("Imputer expects:", imputer.n_features_in_)
+st.write("Model expects:", model.n_features_in_)
+st.write("Input Shape:", input_data.shape)
 
 with open("features (3).json", "r") as f:
     features = json.load(f)
