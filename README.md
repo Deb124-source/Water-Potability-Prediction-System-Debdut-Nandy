@@ -8,7 +8,7 @@ AquaSense AI is a machine learning web application that predicts whether water i
 https://water-potability-prediction-system-debdut-nandy.streamlit.app/
 
 ## User Interface
-<img src="" width="700">
+<img src="Screenshot 2026-07-02 112357.png" width="700">
 
 ## Features
 
