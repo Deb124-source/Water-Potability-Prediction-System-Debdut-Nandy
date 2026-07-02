@@ -8,23 +8,23 @@ import json
 # -----------------------------
 st.set_page_config(
     page_title="AquaSense AI",
-    page_icon="💧",
+    page_icon="",
     layout="centered"
 )
 
 # -----------------------------
 # Load Model
 # -----------------------------
-model = joblib.load("water_quality_model.pkl")
-imputer = joblib.load("imputer.pkl")
+model = joblib.load("water_quality_model (1).pkl")
+imputer = joblib.load("imputer (1).pkl")
 
-with open("features (2).json", "r") as f:
+with open("features (3).json", "r") as f:
     features = json.load(f)
 
 # -----------------------------
 # Title
 # -----------------------------
-st.title("💧 AquaSense AI")
+st.title(" AquaSense AI")
 st.subheader("AI-Powered Water Potability Prediction")
 
 st.write(
