@@ -7,6 +7,9 @@ AquaSense AI is a machine learning web application that predicts whether water i
 ## Live Demo
 https://water-potability-prediction-system-debdut-nandy.streamlit.app/
 
+## User Interface
+<img src="" width="700">
+
 ## Features
 
 - Predicts whether water is drinkable or not
