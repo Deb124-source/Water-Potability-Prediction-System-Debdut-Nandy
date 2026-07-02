@@ -121,21 +121,16 @@ if st.button("Predict Water Quality", use_container_width=True):
 
     probability = model.predict_proba(input_data)[0]
 
-    confidence = probability[prediction] * 100
-
-    st.subheader("Prediction")
+    confidence = float(probability[prediction] * 100)
 
     if prediction == 1:
-
         st.success("Water is Safe for Drinking")
-
     else:
-
         st.error("Water is Not Safe for Drinking")
 
     st.metric(
         "Prediction Confidence",
-        f"{confidence:.2f}%"
+         f"{confidence:.2f}%"
     )
 
     st.progress(confidence / 100)
