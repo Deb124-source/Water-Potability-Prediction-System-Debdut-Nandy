@@ -16,10 +16,6 @@ st.set_page_config(
 # Load Model
 # -----------------------------
 model = joblib.load("water_quality_model (1).pkl")
-imputer = joblib.load("imputer (1).pkl")
-st.write("Imputer expects:", imputer.n_features_in_)
-st.write("Model expects:", model.n_features_in_)
-st.write("Input Shape:", input_data.shape)
 
 with open("features (3).json", "r") as f:
     features = json.load(f)
@@ -120,8 +116,6 @@ if st.button("Predict Water Quality", use_container_width=True):
         trihalomethanes,
         turbidity
     ]])
-
-    input_data = imputer.transform(input_data)
 
     prediction = model.predict(input_data)[0]
 
